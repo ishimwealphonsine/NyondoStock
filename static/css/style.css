@@ -1,0 +1,25 @@
+
+#logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+a {
+  transition: 0.2s;
+}
+a:hover {
+  background-color: #198754;
+}
+
+i {
+  margin-right: 8px;
+}
+
+
+
+
+
+
+
+
