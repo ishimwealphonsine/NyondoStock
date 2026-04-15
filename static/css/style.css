@@ -1,16 +1,6 @@
 .overallbox {
   height: auto;
-  padding: 15px;
-}
-
-.sidebar {
-  border-radius: 10px;
-  box-shadow: #198754 2px 4px 10px;
-}
-
-.main-content {
-  border-radius: 10px;
-  box-shadow: #198754 2px 4px 10px;
+  /* padding: 15px; */
 }
 
 strong {

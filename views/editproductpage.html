@@ -4,8 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edit Product</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/e53d7a7b30.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <div class="modal fade show d-block" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-light">
+
+      <!-- Header -->
+      <div class="modal-header border-bottom">
+        <div>
+          <h5 class="text-dark fw-bold mb-0">
+            <span class="bg-success text-light px-2 py-1 rounded me-2">✏</span>
+            Edit Product
+          </h5>
+          <small class="text-muted">Modify inventory details for item ID: PRD-8821</small>
+        </div>
+        <button class="btn-close"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+
+        <!-- Product Name -->
+        <div class="mb-3">
+          <label class="form-label text-dark">Product Name</label>
+          <input type="text" class="form-control" value="M9 Wood Screw - Industrial Grade">
+        </div>
+
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label text-dark">Category</label>
+            <select class="form-control">
+              <option>Fasteners & Screws</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label text-dark">Supplier (Optional)</label>
+            <select class="form-control">
+              <option>Hardware Corp Ltd</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label text-dark">Stock Quantity</label>
+
+            <div class="input-group">
+              <input type="number" class="form-control" value="15">
+              <span class="input-group-text bg-light text-dark">UNITS</span>
+            </div>
+
+            <small class="text-muted">Current stock level in the main warehouse</small>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label text-dark">Last Restock Date</label>
+            <input type="date" class="form-control" value="2024-03-12">
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Financial -->
+        <h6 class="text-dark fw-bold">
+          FINANCIAL DETAILS
+          <span class="badge bg-light text-dark ms-2">UGX Currency</span>
+        </h6>
+
+        <div class="row mt-2">
+
+          <!-- Cost -->
+          <div class="col-md-6 mb-3">
+            <label class="form-label text-dark">Cost Price</label>
+
+            <div class="input-group">
+              <span class="input-group-text bg-light text-dark">UGX</span>
+              <input type="number" class="form-control" value="450">
+            </div>
+          </div>
+
+          <!-- Selling -->
+          <div class="col-md-6 mb-3">
+            <label class="form-label text-dark">Selling Price</label>
+
+            <div class="input-group">
+              <span class="input-group-text bg-light text-dark">UGX</span>
+              <input type="number" class="form-control border-danger" value="500">
+            </div>
+
+            <small class="text-danger">⚠ Low profit margin detected (Target &gt; 550)</small>
+          </div>
+
+        </div>
+
+        <!-- Info Box -->
+        <div class="bg-light border rounded p-3 mt-2">
+          <small class="text-dark">
+            ℹ <strong>Margin Analysis:</strong> Current markup is <b>50 UGX</b> per unit.
+            Maintaining a minimum 20% margin is recommended for hardware consumables.
+          </small>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer d-flex justify-content-between">
+
+        <small class="text-muted">* Last updated by John Doe on Oct 24, 2023</small>
+
+        <div>
+          <button class="btn btn-outline-dark">Cancel Changes</button>
+          <button class="btn bg-success text-light">Save Updates</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
 </body>
 </html>
