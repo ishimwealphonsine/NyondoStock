@@ -1,3 +1,22 @@
+.overallbox {
+  height: auto;
+  padding: 15px;
+}
+
+.sidebar {
+  border-radius: 10px;
+  box-shadow: #198754 2px 4px 10px;
+}
+
+.main-content {
+  border-radius: 10px;
+  box-shadow: #198754 2px 4px 10px;
+}
+
+strong {
+  color: #198754;
+  font-size: larger;
+}
 
 #logo {
   width: 30px;
@@ -16,10 +35,28 @@ i {
   margin-right: 8px;
 }
 
+.card {
+  box-shadow: #198754 2px 4px 10px;
+}
 
+.inventory-table {
+  box-shadow: #198754 2px 4px 10px;
+  border-radius: 10px;
+}
 
+.chart-section {
+  border-radius: 10px;
+  box-shadow: #198754 2px 4px 10px;
+}
 
+.addnewproductpage {
+  border-radius: 10px;
+  box-shadow: #198754 2px 4px 10px;
+}
 
+.addproductbtn {
+  border-radius: 10px;
+}
 
 
 
